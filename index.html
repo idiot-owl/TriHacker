@@ -46,9 +46,9 @@
     	<input type="text" class="form-control" id="inputCity" placeholder="Enter a City">
   	</div>
     <div class="some">
-    <a href="#" class="btn btn-info btn-lg" id="searchButton">
+    <button type="button" class="btn btn-info btn-lg" id="searchButton" data-toggle="modal" data-target="#myModal">
           	<span class="glyphicon glyphicon-cloud"></span> Search
-  	</a>
+  	</button>
   	</div>
    
 
@@ -70,6 +70,33 @@
     <div class="col-sm-4"> 
       <p>Singapore</p>
       <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Singapore">
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: black;"></h4>
+      </div>
+      <div class="modal-body" style="background-color: #b3b300;">
+          <div class="container">
+                <img src='' id='icon' style='float:left'><h2 id="temp"></h2>
+                <h3 id="description"></h3>
+                <br>
+                <img src='img/pressure.png' id='pressure-icon' style='float:left'><h3 id="pressure"></h3><br>
+                <p id='main'></p>
+                <img src='img/humidity.png' id='humidity-icon' style='float:left'><p id="humidity"></p><br>
+                <img src='img/temp_max.png' id='humidity-icon' style='float:left'><p id="temp_max"></p><br>
+            
+                <img src='img/temp_min.png' id='humidity-icon' style='float:left'><p id="temp_min"></p><br>
+                <img src='img/wind.png' id='humidity-icon' style='float:left'><p id="wind"></p>
+            
+          </div>
+      </div>
     </div>
   </div>
 </div>
