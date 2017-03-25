@@ -41,3 +41,15 @@
   width:30%;
   margin-left:35%;
 }
+#icon{
+  height:15%;
+  width:15%;
+}
+#humidity-icon{
+  height:4%;
+  width:4%;
+}
+#pressure-icon{
+  height:4%;
+  width:4%;
+}
