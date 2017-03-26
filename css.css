@@ -167,8 +167,8 @@
 }
 .loaded #loader {
     opacity: 0;
-    -webkit-transition: all 0.5s ease-out; 
-            transition: all 0.5s ease-out;
+    -webkit-transition: all 0.4s ease-out; 
+            transition: all 0.4s ease-out;
 }
 .loaded #loader-wrapper {
     visibility: hidden;
@@ -176,8 +176,8 @@
 .loaded #loader-wrapper .loader-section.section-top,
 .loaded #loader-wrapper .loader-section.section-bottom {
  
-    -webkit-transition: all 1.0s 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-                transition: all 1.0s 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition: all 0.8s 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+                transition: all 0.8s 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .loaded #loader-wrapper {		
         -webkit-transform: translateX(100%);
@@ -185,8 +185,8 @@
                 transform: translateX(100%);
 	
  
-        -webkit-transition: all 0.5s 1.0s ease-out; 
-                transition: all 0.5s 1.0s ease-out;
+        -webkit-transition: all 0.4s 0.8s ease-out; 
+                transition: all 0.4s 0.8s ease-out;
 }
 input[type=text], input[type=password] {
     padding: 12px 20px;
@@ -195,5 +195,5 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
     color: #000000;
-    border-radius: 25px;
+    border-radius: 35px 30px;
 }
