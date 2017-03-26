@@ -3,7 +3,7 @@
       line-height: 1.8;
       color: #f5f6f7;
   }
-  p {font-size: 16px;}
+  p {font-size: 19px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
       background-color: #1abc9c; /* Green */
@@ -206,4 +206,12 @@ input[type=text], input[type=password] {
     border-radius: 35px 30px;
     height: 42px;
 }
+
+#note{
+text-align: left;
+margin-left: 25%;
+}
+
+li{
+  font-size:17px;
 }
