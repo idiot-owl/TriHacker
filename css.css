@@ -188,7 +188,12 @@
         -webkit-transition: all 0.5s 1.0s ease-out; 
                 transition: all 0.5s 1.0s ease-out;
 }
-#pressure-icon{
-  height:4%;
-  width:4%;
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #000000;
+    border-radius: 25px;
 }
