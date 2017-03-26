@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Weather App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+ 
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"> Weather </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="aboutus.html">WHO MADE THIS?</a></li>
+        <li><a href="#">LOG IN</a></li>
+        <li><a href="#">REGISTER</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-top"></div>
+    <div class="loader-section section-bottom"></div>
+</div>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <img src="img/back.png" style="height:100%" >
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Want to search the current weather of a city? </h3>
+	  <p>Search for the weather of particular city ;) </p>
+	<div class="form-group">
+    	<input type="text" class="form-control" id="inputCity" placeholder="Enter a City">
+  	</div>
+    <div class="some">
+    <button type="button" class="btn btn-info btn-lg" id="searchButton" data-toggle="modal" data-target="#myModal">
+          	<span class="glyphicon glyphicon-cloud"></span> Search
+  	</button>
+  	</div>
+   
+
+  
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Time of some cities</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>London</p>
+      <iframe src="http://free.timeanddate.com/clock/i5nbarmq/n136/fn7/fs18/ftb/tt0/tw0/tm1/ta1/tb4" frameborder="0" width="165" height="54"></iframe>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Allahabad</p>
+      <iframe src="http://free.timeanddate.com/clock/i5nbarmq/n2408/fn7/fs18/ftb/tt0/tw0/tm1/ta1/tb4" frameborder="0" width="159" height="54"></iframe>
+	</div>
+    <div class="col-sm-4"> 
+      <p>Singapore</p>
+      <iframe src="http://free.timeanddate.com/clock/i5nbarmq/n236/fn7/fs18/ftb/tt0/tw0/tm1/ta1/tb4" frameborder="0" width="162" height="54"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: black;"></h4>
+      </div>
+      <div class="modal-body" style="background-color: #9933ff;">
+          <div class="container">
+           
+                <img src="" id="icon" style="float:left"><h2 id="temp"></h2>
+                <h3 id="description"></h3>
+             
+                <img src="img/pressure.png" id="pressure-icon" style="float:left"><p id="pressure"></p><br>
+            
+                <img src="img/humidity.png" id="humidity-icon" style="float:left"><p id="humidity"></p><br>
+                <img src="img/temp_max.png" id="humidity-icon" style="float:left"><p id="temp_max"></p><br>
+            
+                <img src="img/temp_min.png" id="humidity-icon" style="float:left"><p id="temp_min"></p><br>
+                <img src="img/wind.png" id="humidity-icon" style="float:left"><p id="wind"></p>
+            
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Made By:</p>
+  <p>Harsh Jain</p>
+  <p>Saksham Singh</p>
+  <p>Ashish Agarwal</p> 
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
