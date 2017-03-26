@@ -205,4 +205,6 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
     color: #000000;
     border-radius: 35px 30px;
+    height: 42px;
+}
 }
