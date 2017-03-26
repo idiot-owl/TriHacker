@@ -1,4 +1,5 @@
 function getWeatherData(city) {
+	"use strict";
     $.ajax({
         type: 'GET',
         dataType: 'json',
@@ -16,9 +17,10 @@ function getWeatherData(city) {
             $('#wind').html(data.wind.speed + ' m/s');
             $('#icon').attr('src','img/' + data.weather[0].main + '.png');
         }
-    })}
+    });}
 
 $('#searchButton').click(function() {
+	"use strict";
     var city = $('#inputCity').val();
     getWeatherData(city);
     $('#inputCity').val('');
@@ -26,6 +28,7 @@ $('#searchButton').click(function() {
 
 console.log('done!!');
 $(document).ready(function() {
+	"use strict";
  
     setTimeout(function(){
         $('body').addClass('loaded');
@@ -33,4 +36,11 @@ $(document).ready(function() {
     }, 3000);
  
 });
-
+function clearfields() {
+	"use strict";
+	document.getElementById("uname").value = "";
+	document.getElementById("pword").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("aname").value = "";
+}
+clearfields();
