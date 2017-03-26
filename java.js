@@ -2,7 +2,7 @@ function getWeatherData(city) {
     $.ajax({
         type: 'GET',
         dataType: 'json',
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=b6fff70a1df60ee9c14b03d5c9f976e1",
+        url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=b6fff70a1df60ee9c14b03d5c9f976e1",
         success: function(data) {
             console.log(data);
             $('#myModalLabel').html(data.name);
