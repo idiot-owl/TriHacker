@@ -41,19 +41,19 @@
 </div>
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <img src="img/back.png" style="height:100%" >
+  <img src="img/back.png" id ="bgback">
 
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Want to search the current weather of a city? </h3>
-	  <p>Search for the weather of particular city ;) </p>
+	  <p>Search for the weather of any particular city ;) </p>
 	<div class="form-group">
     	<input type="text" class="form-control" id="inputCity" placeholder="Enter a City">
   	</div>
     <div class="some">
-    <button type="button" class="btn btn-info btn-lg" id="searchButton" data-toggle="modal" data-target="#myModal">
+    <button class="btn btn-info btn-lg" id="searchButton" data-toggle="modal" data-target="#myModal">
           	<span class="glyphicon glyphicon-cloud"></span> Search
   	</button>
   	</div>
@@ -99,10 +99,10 @@
                 <img src="img/pressure.png" id="pressure-icon" style="float:left"><p id="pressure"></p><br>
             
                 <img src="img/humidity.png" id="humidity-icon" style="float:left"><p id="humidity"></p><br>
-                <img src="img/temp_max.png" id="humidity-icon" style="float:left"><p id="temp_max"></p><br>
+                <img src="img/temp_max.png" id="temp_max-icon" style="float:left"><p id="temp_max"></p><br>
             
-                <img src="img/temp_min.png" id="humidity-icon" style="float:left"><p id="temp_min"></p><br>
-                <img src="img/wind.png" id="humidity-icon" style="float:left"><p id="wind"></p>
+                <img src="img/temp_min.png" id="temp_min-icon" style="float:left"><p id="temp_min"></p><br>
+                <img src="img/wind.png" id="wind-icon" style="float:left"><p id="wind"></p>
             
           </div>
       </div>
@@ -113,8 +113,8 @@
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Made By:</p>
-  <p>Harsh Jain</p>
   <p>Saksham Singh</p>
+  <p>Harsh Jain</p>
   <p>Ashish Agarwal</p> 
 </footer>
 
