@@ -66,6 +66,12 @@
   height:5%;
   width:5%;
 }
+#comic {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#login-button {
+   color: #000000;
+}
 #loader-wrapper {
     position: fixed;
     top: 0;
