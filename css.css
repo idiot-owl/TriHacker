@@ -49,6 +49,7 @@
   height:4%;
   width:4%;
 }
+<<<<<<< HEAD
 #wind-icon{
   height:4%;
   width:4%;
@@ -186,4 +187,8 @@
  
         -webkit-transition: all 0.5s 1.0s ease-out; 
                 transition: all 0.5s 1.0s ease-out;
+}
+#pressure-icon{
+  height:4%;
+  width:4%;
 }
