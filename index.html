@@ -40,13 +40,13 @@
     <div class="loader-section section-bottom"></div>
 </div>
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <img src="img/back.png" id ="bgback">
+<div class="container-fluid bg-2 text-center">
+  <canvas id="myCanvas"></canvas>
 
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid bg-1 text-center">
   <h3 class="margin">Want to search the current weather of a city? </h3>
 	  <p>Search for the weather of any particular city ;) </p>
 	<div class="form-group">
@@ -54,23 +54,34 @@
   	</div>
     <div class="some">
     <button class="btn btn-info btn-lg" id="searchButton" data-toggle="modal" data-target="#myModal">
-          	<span class="glyphicon glyphicon-cloud"></span> Search
+          	<span class="glyphicon glyphicon-cloud"></span> Get Weather
   	</button>
   	</div>
-   <div id="note">
-       <br>
-      <p>NOTE: For getting the search results kindly change your browser(Mozilla Firefox) settings:</p>
-      <ul>
-      <p><li>Open a new tab on your browser.</li> <br>
-         <li>Type 'about:config' on the search bar.</li><br>
-         <li>Click 'I accept the risk' button and continue.</li> <br>
-         <li>Search for 'mixed_content.block_active_content'.</li> <br>
-         <li>Change its value from 'true' to 'false' by double-clicking the search result.</li> <br>
-         <li>Reload the web page from <a href="https://idiot-owl.github.io/TriHacker">here</a>.</li><br>
-      </p>
-      </ul>
 
-    </div>
+  
+</div>
+
+<!-- Bonus Container -->
+<div class="container-fluid bg-6 text-center" style="background-color: #556B2F">
+  <h3 class="margin">Want to know the average temperature of some cities? </h3>
+	  <p>Enter names of upto four cities here.</p>
+	<div class="form-group" id="firstCity">
+    	<input type="text" class="form-control" id="inputCity1" placeholder="Enter first city">
+  	</div>
+  	<div class="form-group" id="secondCity">
+    	<input type="text" class="form-control" id="inputCity2" placeholder="Enter second city">
+  	</div>
+  	<div class="form-group" id="thirdCity">
+    	<input type="text" class="form-control" id="inputCity3" placeholder="Enter third city">
+  	</div>
+  	<div class="form-group" id="fourthCity">
+    	<input type="text" class="form-control" id="inputCity4" placeholder="Enter fourth city">
+  	</div>
+    <div class="some">
+    <button class="btn btn-info btn-lg" id="averageButton" data-toggle="modal" data-target="#averageModal">
+          	<span class="glyphicon glyphicon-cloud"></span> Get Average
+  	</button>
+  	</div>
 
   
 </div>
@@ -123,16 +134,44 @@
   </div>
 </div>
 
+<!-- Average Modal -->
+<div class="modal fade" id="averageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: black;">Average Temperature</h4>
+      </div>
+      <div class="modal-body" style="background-color: #9933ff;">
+          <div class="container" id="averageBody">
+           
+                
+            
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Made By:</p>
-  <p>Saksham Singh</p>
-  <p>Harsh Jain</p>
-  <p>Ashish Agarwal</p> 
+	<div class="container" style="text-align: left">
+		<p style="font-size: 18px"> &copy; Team SAW. All Rights reserved. </p>
+		<p>
+	</div>
+	<div class="container" style="text-align: right; float:left">
+		<a target="_blank" title="find us on Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="img/facebook.png" border=0></a>
+		<a target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="img/twitter.png" border=0></a>
+		<a target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="img/twitter2.png" border=0></a>
+	</div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="java.js"></script>
+    <script type="text/javascript" src="jav/jq.js"></script>
+    <script type="text/javascript" src="jav/alphabet.js"></script>
+    <script type="text/javascript" src="jav/bubbles.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
