@@ -1,6 +1,7 @@
 # TriHacker
 A Weather App<br>
 Search for the weather of a city and get instant details <br>
+<br>Also now get the average temperature of four cities
 <br>
 --------------Please NOTE----------------- <br>
 <p>NOTE: For getting the search results kindly change your browser settings:</p>
