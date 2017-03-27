@@ -92,11 +92,11 @@
        height: 200px;
        margin: -100px 0 0 -100px;
  	   border: 7px solid transparent;
-       border-left-color: #3498db;
+       border-top-color: #3498db;
        z-index: 1500;
        border-radius: 50%;
-	   -webkit-animation: spin 1.5s linear infinite;
-	   animation: spin 1.5s linear infinite;
+	   -webkit-animation: spin 1.0s linear infinite;
+	   animation: spin 1.0s linear infinite;
        }
 #loader:before {
     content: "";
@@ -108,8 +108,8 @@
     border: 7px solid transparent;
     border-top-color: #e74c3c;
     border-radius: 50%;
-	-webkit-animation: spin 1.5s linear infinite;
-	animation: spin 1.5s linear infinite;
+	-webkit-animation: spin 1.4s linear infinite;
+	animation: spin 1.4s linear infinite;
 }
 #loader:after {
     content: "";
@@ -119,10 +119,10 @@
     right: 15px;
     bottom: 15px;
     border: 7px solid transparent;
-    border-right-color: #4CC512;
+    border-top-color: #4CC512;
     border-radius: 50%;
-	-webkit-animation: spin 1.5s linear infinite;
-	animation: spin 1.5s linear infinite;
+	-webkit-animation: spin 1.8s linear infinite;
+	animation: spin 1.8s linear infinite;
 }
 @-webkit-keyframes spin {
     0%   {
@@ -214,4 +214,9 @@ margin-left: 25%;
 
 li{
   font-size:17px;
+}
+
+button[type=submit] {
+  color: #000000;
+  border-radius: 20px;
 }
