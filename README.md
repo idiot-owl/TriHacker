@@ -1,9 +1,11 @@
 # TriHacker
-A Weather App
-Search for the weather of a city and get instant details 
-
---------------Please NOTE-----------------
-<p>NOTE: For getting the search results kindly change your browser(Mozilla Firefox) settings:</p>
+A Weather App<br>
+Search for the weather of a city and get instant details <br>
+<br>
+--------------Please NOTE----------------- <br>
+<p>NOTE: For getting the search results kindly change your browser settings:</p>
+<ul>
+<li> For Mozilla Firefox <br>
       <ul>
       <p><li>Open a new tab on your browser.</li> <br>
          <li>Type 'about:config' on the search bar.</li><br>
@@ -13,7 +15,11 @@ Search for the weather of a city and get instant details
          <li>Reload the web page from <a href="https://idiot-owl.github.io/TriHacker">here</a>.</li><br>
       </p>
       </ul>
+</li>
+<li> For Chrome <br>
+<p> Enable unsafe scripts from the seach bar or from the setings. </p>
+</li>
+</ul>
  
-
 
 ===============================================================================
