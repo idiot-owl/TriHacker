@@ -17,7 +17,7 @@ Search for the weather of a city and get instant details <br>
       </ul>
 </li>
 <li> For Chrome <br>
-<p> Enable unsafe scripts from the seach bar or from the setings. </p>
+<p> Enable unsafe scripts from the search bar or from the settings. </p>
 </li>
 </ul>
  
