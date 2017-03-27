@@ -1,3 +1,6 @@
+var self = this;
+var sum = 0;
+
 function getWeatherData(city) {
 	"use strict";
     $.ajax({
@@ -19,6 +22,7 @@ function getWeatherData(city) {
         }
     });}
 
+
 $('#searchButton').click(function() {
 	"use strict";
     var city = $('#inputCity').val();
@@ -26,7 +30,47 @@ $('#searchButton').click(function() {
     $('#inputCity').val('');
 });
 
+
+
+function getWeatherDataAverage(city) {
+    "use strict";
+    $.ajax({
+        type: 'GET',
+        dataType: 'json',
+        url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=b6fff70a1df60ee9c14b03d5c9f976e1",
+        success: function(data) {
+            console.log(data);
+            sum = sum + Number(data.main.temp);
+            $('#averageBody').append("<p class='cities'>" + city + "  " + data.main.temp + "</p>");
+        }
+    });}
+
+$('#averageButton').click(function() {
+    "use strict";
+    $('#averageBody').empty();
+    var city1 = $('#inputCity1').val();
+    var city2 = $('#inputCity2').val();
+    var city3 = $('#inputCity3').val();
+    var city4 = $('#inputCity4').val();
+    getWeatherDataAverage(city1);
+    getWeatherDataAverage(city2);
+    getWeatherDataAverage(city3);
+    getWeatherDataAverage(city4);
+
+    $(document).ajaxStop(function() {
+        console.log(sum/4);
+        sum = sum / 4;
+        if(sum){
+            $('#averageBody').append("<p id='averagetemp'>" + "Average Temperature is  " + sum.toString() + "</p>");
+            sum = 0;
+        }
+    })
+     $('#averageBody').empty();
+});
+
 console.log('done!!');
+
+
 $(document).ready(function() {
 	"use strict";
  
