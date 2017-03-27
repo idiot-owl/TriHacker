@@ -41,7 +41,7 @@ function getWeatherDataAverage(city) {
         success: function(data) {
             console.log(data);
             sum = sum + Number(data.main.temp);
-            $('#averageBody').append("<p class='cities'>" + city + "  " + data.main.temp + "</p>");
+            $('#averageBody').append("<p class='cities'>" + "Temperature of " + city[0].toUpperCase() + city.slice(1) + " is  " + data.main.temp + '&degC' +"</p>"+ "</p>");
         }
     });}
 
@@ -61,7 +61,8 @@ $('#averageButton').click(function() {
         console.log(sum/4);
         sum = sum / 4;
         if(sum){
-            $('#averageBody').append("<p id='averagetemp'>" + "Average Temperature is  " + sum.toString() + "</p>");
+            sum = sum.toPrecision(4);
+            $('#averageBody').append("<p id='averagetemp'>" + "Average Temperature is  " + sum.toString() + '&degC' + "</p>");
             sum = 0;
         }
     })
